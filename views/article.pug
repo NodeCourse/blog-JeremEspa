@@ -1,0 +1,15 @@
+html
+    head
+        title Signup on my awesome website!
+        link(rel="stylesheet", href="/css/styles.css")
+    body
+        main
+            h1 Ajouter un post
+                form(action='article' method='post' )
+                    div
+                        label(for='title_field') Titre
+                        input(id='title_field' name='title')
+                    div
+                        label(for='content_field') Contenu
+                        textarea(id='content_field' name='content').materialize-textarea
+                    input(type='submit').btn.btn-block
